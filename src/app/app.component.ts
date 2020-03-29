@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { ApiService } from './api.service';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'my-weather-extension';
+
+  isLoading$: Observable<boolean>;
+
+  constructor( private apiService: ApiService){
+    this.isLoading$ = apiService.isLoading$;
+  }
 }

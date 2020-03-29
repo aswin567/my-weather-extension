@@ -1,1 +1,39 @@
+
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@import '~@angular/material/theming';
+@import './assets/styles/palette/mat-green.scss';
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat-core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$my-weather-extension-primary: mat-palette($mat-green);
+$my-weather-extension-accent: mat-palette($mat-blue);
+
+// The warn palette is optional (defaults to red).
+$my-weather-extension-warn: mat-palette($mat-red);
+
+// Create the theme object (a Sass map containing all of the palettes).
+$my-weather-extension-theme: mat-light-theme($my-weather-extension-primary, $my-weather-extension-accent, $my-weather-extension-warn);
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($my-weather-extension-theme);
+
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+
+@import url('./assets/styles/stylesheets/position.scss');
+@import url('./assets/styles/stylesheets/material-customize.scss');
+
+
+@import url('./assets/styles/stylesheets/common.scss');
+

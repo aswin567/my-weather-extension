@@ -1,0 +1,19 @@
+:host {
+    height: 100%;
+  }
+.my-weather-container{
+    min-width: 330px;
+
+    .weather-details{
+        text-align: center;
+        .temperature{
+            font-size: 97px;
+            font-family: 'Jura', sans-serif;
+             color: #d6daef;
+            span {
+                content: "\00B0";
+              }
+        }
+
+    }
+}

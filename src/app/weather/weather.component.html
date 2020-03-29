@@ -1,0 +1,8 @@
+<div class="my-weather-container">
+    <mat-toolbar color="primary">Current Weather</mat-toolbar>
+    <div class="weather-details">
+        <div class="temperature" *ngIf="currentLocation">
+            {{currentLocation.main.temp}}<span>&#176;</span>
+        </div>
+    </div>
+</div>

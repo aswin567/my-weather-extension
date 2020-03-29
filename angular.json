@@ -29,7 +29,10 @@
               "src/manifest.json"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/styles/stylesheets/common.scss",
+              "src/styles/stylesheets/position.scss",
+              "src/styles/stylesheets/materila-customize.scss"
             ],
             "scripts": []
           },
@@ -94,7 +97,10 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/styles/stylesheets/common.scss",
+              "src/styles/stylesheets/position.scss",
+              "src/styles/stylesheets/materila-customize.scss"
             ],
             "scripts": []
           }
